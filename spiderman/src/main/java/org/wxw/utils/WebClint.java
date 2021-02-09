@@ -22,6 +22,7 @@ public class WebClint {
         webClient.getOptions().setTimeout(50000);
         //设置js抛出异常:false
         webClient.getOptions().setThrowExceptionOnScriptError(false);
+        webClient.getOptions().setThrowExceptionOnFailingStatusCode(false);
         //允许重定向
         webClient.getOptions().setRedirectEnabled(true);
         //允许cookie
